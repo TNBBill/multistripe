@@ -6,14 +6,15 @@ require 'multistripe/version'
 Gem::Specification.new do |gem|
   gem.name          = "multistripe"
   gem.version       = Multistripe::VERSION
-  gem.authors       = ["TODO: Write your name"]
-  gem.email         = ["TODO: Write your email address"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
-  gem.homepage      = ""
+  gem.authors       = ["Bill Centinaro"]
+  gem.email         = ["Bill@theresnobox.net"]
+  gem.description   = %q{A Stripe API Client, to support multiple API Keys.}
+  gem.summary       = %q{}
+  gem.homepage      = "https://github.com/TNBBill/multistripe"
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
   gem.require_paths = ["lib"]
+  gem.add_dependency('rest-client')
 end
