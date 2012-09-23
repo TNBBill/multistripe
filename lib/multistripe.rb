@@ -1,5 +1,3 @@
 require "multistripe/version"
-
-module Multistripe
-  # Your code goes here...
-end
+require 'multistripe/plan'
+require 'multistripe/customer'
